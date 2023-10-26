@@ -1,20 +1,15 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/Views/Customer/customer_home.view.dart';
-import 'package:flutter_app/Views/Colaborator/funcionario_page.dart';
-import 'package:flutter_app/Views/Home/Widgets/park_in_area.dart';
-import 'package:flutter_app/Widgets/button_area.dart';
-import 'package:flutter_app/Widgets/rodape_area.dart';
-import 'package:flutter_app/App/Theme/custom_theme.dart';
+import 'package:park_in_refactor/app/theme/theme.dart';
 import 'package:park_in_refactor/app/widgets/social_area.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomeView extends StatelessWidget {
+  const HomeView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    log('Homepage - Build');
+    log('HomeView - Build');
     final CustomTheme tema = Theme.of(context).extension<CustomTheme>()!;
     return Scaffold(
       resizeToAvoidBottomInset: true,
