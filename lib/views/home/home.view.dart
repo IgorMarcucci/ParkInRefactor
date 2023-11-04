@@ -19,9 +19,25 @@ class HomeView extends StatelessWidget {
           children: [
             Expanded(
               flex: 3,
-              child: Container(
-                color: Colors.transparent,
-                child: const ParkInAreaHome(),
+              child: SizedBox(
+                child: Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            'Park',
+            style: tema.parkText,
+            textAlign: TextAlign.center,
+          ),
+          Text(
+            'In',
+            style: tema.inText,
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    ),
               ),
             ),
             Expanded(
